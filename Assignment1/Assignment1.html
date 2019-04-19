@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<head>
+</head>
+
+<body>
+
+<style> 
+
+body {
+margin: 0;
+}
+
+#button {
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: centre;
+  display: block;
+  font-size: 18px;
+  margin: auto;
+  cursor: pointer;
+  
+}
+
+#num{
+  text-align : right;
+}
+
+table{ 
+font-family: sans-serif;
+border-collapse : collapse; 
+width : 75%; 
+} 
+  
+
+  
+  
+td { 
+  
+  border: 1px solid #dddddd; 
+  text-align: left; 
+  padding: 8px 5px; 
+  
+} 
+
+th { 
+	font-style: sans-serif;
+	text-align: centre; 
+	background-color: #4CAF50; 
+	color: black; 
+	padding : 8px 5px;
+	
+} 
+</style> 
+  
+
+<table id= "pr"> 
+<th>Student Name</th> 
+<th>Student ID</th> 
+<th>Assignment 1</th> 
+<th>Assignment 2</th> 
+<th>Assignment 3</th> 
+<th>Assignment 4</th> 
+<th>Assignment 5</th> 
+<th>Final Grade</th> 
+
+<tr>
+  <td>Mohamed Salah</td> 
+  <td>17300046</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>   
+  <td id = "num"></td>  
+</tr> 
+
+<tr> 
+  <td>Jordan Henderson</td> 
+  <td>32346456</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td id = "num"></td>  
+</tr> 
+
+<tr> 
+  <td>Conor Masterson</td> 
+  <td>12343266</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td id = "num"></td>  
+</tr> 
+
+<tr> 
+  <td>Virgil Van Djik</td> 
+  <td>98987785</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td id = "num"></td> 
+</tr> 
+
+<tr> 
+  <td>Allison Becker</td> 
+  <td>87347543</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td id = "num"></td>  
+</tr> 
+
+<tr> 
+  <td>Dejan Lovren</td> 
+  <td>99338475</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td id = "num"></td>    
+</tr> 
+
+<tr> 
+  <td>Sadio Mane</td> 
+  <td>03947573</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td id = "num"></td>    
+</tr> 
+
+<tr> 
+  <td>Roberto Firmino</td> 
+  <td>84758693</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td id = "num"></td> 
+</tr> 
+
+<tr> 
+  <td>Andy Robertson</td> 
+  <td>29384758</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td id = "num"></td> 
+</tr> 
+
+<tr> 
+  <td>Jurgen Klopp</td> 
+  <td>29384758</td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td contenteditable = "true"; id = "num"></td> 
+  <td contenteditable = "true"; id = "num"></td>  
+  <td id = "num"></td> 
+</tr> 
+</table> 
+
+<button id = "button" onclick = "myFunction()"> Calculate Final Grades </button>
+
+<p id = "info"></p>
+
+<script>
+function myFunction() {
+   var table = document.getElementById("pr");
+   var rows = table.rows;
+   
+   for (var i = 1; i < rows.length; i++) {
+     var cells = rows[i].cells;
+     var sum = 0;
+  var numbers = 5;
+     for (var x = 2; x < (cells.length -1); x++) {
+       var cell = cells[x];
+       var addme = parseInt(cell.innerHTML);
+       if(!isNaN(addme)) {      
+          sum += addme;
+         
+       }
+     }
+     var average = sum / numbers;
+     rows[i].cells[7].innerHTML = "<td>" + Math.round(average) + "%" + "</td>";
+     if(average<40){
+     rows[i].cells[7].style.background="red";
+     rows[i].cells[7].style.color="white";
+     }
+     else{
+     rows[i].cells[7].style.background="green";
+     rows[i].cells[7].style.color="black";
+     
+     }
+     
+   }
+   
+ }
+
+document.getElementById('myFunction').onclick = myFunction;
+</script>
+
+</body>
